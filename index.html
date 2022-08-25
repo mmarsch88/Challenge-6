@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+    <header class="headers headerBox">
+        <div>
+        <h1>Weather Dashboard</h1>
+        </div>
+    </header>
+    <main class="main">
+        <div class="col-12 searchBox">
+            <div class="card">
+              <h3 class="card-header headers">Search By City</h3>
+              <form id="city-form" class="card-body" >
+                <input class="form-input" type="text" name="cityName" autofocus="true"/>
+                <button id="searchBtn" type="submit" class="searchBtn">search</button>
+              </form>
+            </div>
+        </div>
+        <div class="col-12 currentWeatherBox">
+            <div class="card">
+              <h3 class="card-header headers dynamicBoxHeaders" id="location"></h3>
+                <table class="table noBorder" id="currentWeather">
+                    <tr class="myRows">
+                        <td class="lables">Temp:</td>
+                        <td class="cityTemp" id="temp"></td>
+                    </tr>    
+                    <tr class="myRows">
+                        <td class="lables">Wind:</td>
+                        <td class="cityWind" id="wind"></td>
+                    </tr>   
+                    <tr class="myRows">
+                        <td class="lables">Humidity:</td>
+                        <td class="cityHumidity" id="humidity"></td>
+                    </tr>   
+                    <tr class="myRows">
+                        <td class="lables">UV Index:</td>
+                        <td class="cityHeatIndex" id="icon"></td>
+                    </tr>   
+                </table>
+            </div>
+        </div>
+        <div class="col-12 searchHistoryBox">
+            <div class="card">
+              <h3 class="card-header headers dynamicBoxHeaders">Search History</h3>
+              <div class="headers">
+                <ul></ul>
+              </div>
+            </div>
+        </div>
+        <div class="col-12 forecastBox">
+            <div class="card">
+              <h3 class="card-header headers dynamicBoxHeaders">5-Day Forecast</h3>
+                <div class="forecast headers">
+                  <div class="days headers" id="mon">Mon</div>
+                  <div class="days headers" id="tue">Tue</div>
+                  <div class="days headers" id="wed">Wed</div>
+                  <div class="days headers" id="thu">Thu</div>
+                  <div class="days headers" id="fri">Fri</div>
+                </div>
+            </div>
+        </div>        
+    </main>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

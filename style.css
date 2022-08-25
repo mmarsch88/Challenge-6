@@ -1,0 +1,71 @@
+  body {
+  margin: 10px;
+  background-color: cadetblue;
+}
+  
+  .headers {
+    text-align: center;
+  }  
+
+  .headerBox {
+    margin-bottom: 50px;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+  }
+  
+  .searchBox { 
+    float: left; 
+    width: 30%; 
+    margin-bottom: 20px;
+  } 
+
+  .searchHistoryBox { 
+    float: left; 
+    clear: left;
+    width: 30%; 
+  } 
+  
+  .currentWeatherBox {
+    float:right;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .forecastBox {
+    float:right;
+    clear: right;
+    width: 70%;
+  } 
+
+  .dynamicBoxHeaders {
+    margin-bottom: 20px;
+  }
+
+  .table {
+    border: none;
+  }
+  
+  .lables {
+    width: 12%
+  }
+
+  .noBorder {
+    border: none;
+  }
+
+  .days {
+    border: 1px solid black;
+    display: inline-block;
+    width: 19%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+
+
+
